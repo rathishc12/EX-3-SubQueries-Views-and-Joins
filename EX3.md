@@ -8,28 +8,27 @@ CREATE TABLE EMP (EMPNO NUMBER(4) PRIMARY KEY,ENAME VARCHAR2(10),JOB VARCHAR2(9)
 ## Insert the values
 ```sql
 INSERT INTO EMP (EMPNO, ENAME, JOB, MGR, HIREDATE, SAL, COMM, DEPTNO)
-VALUES (7369, 'SMITH', 'CLERK', 7902, '17-DEC-80', 800, NULL, 20);
+VALUES (7369, 'jivan', 'CLERK', 7902, '17-DEC-80', 800, NULL, 20);
 
 INSERT INTO EMP (EMPNO, ENAME, JOB, MGR, HIREDATE, SAL, COMM, DEPTNO)
-VALUES (7499, 'ALLEN', 'SALESMAN', 7698, '20-FEB-81', 1600, 300, 30);
+VALUES (7499, 'karthi', 'SALESMAN', 7698, '20-FEB-81', 1600, 300, 30);
 
 INSERT INTO EMP (EMPNO, ENAME, JOB, MGR, HIREDATE, SAL, COMM, DEPTNO)
-VALUES (7521, 'WARD', 'SALESMAN', 7698, '22-FEB-81', 1250, 500, 30);
+VALUES (7521, 'rathish', 'SALESMAN', 7698, '22-FEB-81', 1250, 500, 30);
 
 INSERT INTO EMP (EMPNO, ENAME, JOB, MGR, HIREDATE, SAL, COMM, DEPTNO)
-VALUES (7566, 'JONES', 'MANAGER', 7839, '02-APR-81', 2975, NULL, 20);
+VALUES (7566, 'faizal', 'MANAGER', 7839, '02-APR-81', 2975, NULL, 20);
 
 INSERT INTO EMP (EMPNO, ENAME, JOB, MGR, HIREDATE, SAL, COMM, DEPTNO)
-VALUES (7654, 'MARTIN', 'SALESMAN', 7698, '28-SEP-81', 1250, 1400, 30);
+VALUES (7654, 'sriram', 'SALESMAN', 7698, '28-SEP-81', 1250, 1400, 30);
 
 INSERT INTO EMP (EMPNO, ENAME, JOB, MGR, HIREDATE, SAL, COMM, DEPTNO)
-VALUES (7698, 'BLAKE', 'MANAGER', 7839, '01-MAY-81', 2850, NULL, 30);
+VALUES (7698, 'augus', 'MANAGER', 7839, '01-MAY-81', 2850, NULL, 30);
+INSERT INTO EMP (EMPNO, ENAME, JOB, MGR, HIREDATE, SAL, COMM, DEPTNO)
+VALUES (7782, 'bla bla', 'MANAGER', 7839, '09-JUN-81', 2450, NULL, 10);
 
 INSERT INTO EMP (EMPNO, ENAME, JOB, MGR, HIREDATE, SAL, COMM, DEPTNO)
-VALUES (7782, 'CLARK', 'MANAGER', 7839, '09-JUN-81', 2450, NULL, 10);
-
-INSERT INTO EMP (EMPNO, ENAME, JOB, MGR, HIREDATE, SAL, COMM, DEPTNO)
-VALUES (7788, 'SCOTT', 'ANALYST', 7566, '19-APR-87', 3000, NULL, 20);
+VALUES (7788, 'cha cha', 'ANALYST', 7566, '19-APR-87', 3000, NULL, 20);
 
 INSERT INTO EMP (EMPNO, ENAME, JOB, MGR, HIREDATE, SAL, COMM, DEPTNO)
 VALUES (7839, 'KING', 'PRESIDENT', NULL, '17-NOV-81', 5000, NULL, 10);
@@ -42,12 +41,6 @@ VALUES (7876, 'ADAMS', 'CLERK', 7788, '23-MAY-87', 1100, NULL, 20);
 
 INSERT INTO EMP (EMPNO, ENAME, JOB, MGR, HIREDATE, SAL, COMM, DEPTNO)
 VALUES (7900, 'JAMES', 'CLERK', 7698, '03-DEC-81', 950, NULL, 30);
-
-INSERT INTO EMP (EMPNO, ENAME, JOB, MGR, HIREDATE, SAL, COMM, DEPTNO)
-VALUES (7902, 'FORD', 'ANALYST', 7566, TO_DATE('03-DEC-81', 'DD-MON-RR'), 3000, 20, 20);
-
-INSERT INTO EMP (EMPNO, ENAME, JOB, MGR, HIREDATE, SAL, COMM, DEPTNO)
-VALUES (7934, 'MILLER', 'CLERK', 7782, TO_DATE('23-JAN-82', 'DD-MON-RR'), 1300, 10, 10);
 ```
 
 ## Create department table
@@ -69,39 +62,39 @@ INSERT INTO DEPT (DEPTNO, DNAME, LOC) VALUES (40, 'OPERATIONS', 'BOSTON');
 
 
 ### QUERY:
-![image](https://github.com/rathishc12/EX-3-SubQueries-Views-and-Joins/assets/120539398/5b6ccb9e-3356-41d2-ab58-301161cfc851)
 
+![Screenshot 2023-10-10 152012](https://github.com/rathishc12/EX-3-SubQueries-Views-and-Joins/assets/120539398/7500931c-602d-4340-a1ec-b888a1d679a1)
 
 ### OUTPUT:
-![image](https://github.com/rathishc12/EX-3-SubQueries-Views-and-Joins/assets/120539398/d1eb0b4b-b175-441a-9e47-40cbe29f0d24)
+![Screenshot 2023-10-10 152029](https://github.com/rathishc12/EX-3-SubQueries-Views-and-Joins/assets/120539398/c9e1a29c-8da2-4062-a9b7-6391d8456628)
 
 ### Q2) List the ename,job,sal of the employee who get minimum salary in the company.
 
 ### QUERY:
-![image](https://github.com/rathishc12/EX-3-SubQueries-Views-and-Joins/assets/120539398/e52462e5-e2b7-410f-b4f9-8b4029d57307)
 
+![Screenshot 2023-10-10 152158](https://github.com/rathishc12/EX-3-SubQueries-Views-and-Joins/assets/120539398/b499241a-4214-43f5-8934-d4e870914cd9)
 
 ### OUTPUT:
-![image](https://github.com/rathishc12/EX-3-SubQueries-Views-and-Joins/assets/120539398/0d3172b7-87be-4d59-b85e-772dd5ad4d81)
+![Screenshot 2023-10-10 152203](https://github.com/rathishc12/EX-3-SubQueries-Views-and-Joins/assets/120539398/b49f4e84-1fa0-4a63-a50b-28b774e6fcdf)
 
 ### Q3) List ename, job of the employees who work in deptno 10 and his/her job is any one of the job in the department ‘SALES’.
 
 ### QUERY:
-![image](https://github.com/rathishc12/EX-3-SubQueries-Views-and-Joins/assets/120539398/5886f208-3d44-47a8-b143-652f07c9780a)
 
+![Screenshot 2023-10-10 152354](https://github.com/rathishc12/EX-3-SubQueries-Views-and-Joins/assets/120539398/3e140189-884b-46f1-95ab-b3cf4b18f57e)
 
 ### OUTPUT:
 
-![image](https://github.com/rathishc12/EX-3-SubQueries-Views-and-Joins/assets/120539398/ce13caad-10d3-4590-b9b9-8a6ce164afae)
+![Screenshot 2023-10-10 152358](https://github.com/rathishc12/EX-3-SubQueries-Views-and-Joins/assets/120539398/33cd5fb5-cef7-4860-8196-9b7f530f0882)
 
 ### Q4) Create a view empv5 (for the table emp) that contains empno, ename, job of the employees who work in dept 10.
 
 ### QUERY:
-![image](https://github.com/rathishc12/EX-3-SubQueries-Views-and-Joins/assets/120539398/0c37f103-cb26-46aa-a5cb-fe80701aebd8)
 
+![Screenshot 2023-10-10 152532](https://github.com/rathishc12/EX-3-SubQueries-Views-and-Joins/assets/120539398/d3106cf7-380e-4bee-9b12-1886256287da)
 
 ### OUTPUT:
-![image](https://github.com/rathishc12/EX-3-SubQueries-Views-and-Joins/assets/120539398/f05758be-414e-432f-b038-829d917055ca)
+![Screenshot 2023-10-10 152613](https://github.com/rathishc12/EX-3-SubQueries-Views-and-Joins/assets/120539398/c8ab7ee4-b734-4852-b725-f51525c37725)
 
 ### Q5) Create a view with column aliases empv30 that contains empno, ename, sal of the employees who work in dept 30. Also display the contents of the view.
 
@@ -112,7 +105,7 @@ SELECT * FROM emv30;
 ```
 
 ### OUTPUT:
-![image](https://github.com/rathishc12/EX-3-SubQueries-Views-and-Joins/assets/120539398/a5ad7aa6-5470-4716-b9ab-38cfcf07d1cf)
+![Screenshot 2023-10-10 153047](https://github.com/rathishc12/EX-3-SubQueries-Views-and-Joins/assets/120539398/5c302d0e-c293-414d-8d53-923a0be1b28a)
 
 ### Q6) Update the view empv5 by increasing 10% salary of the employees who work as ‘CLERK’. Also confirm the modifications in emp table
 
@@ -130,14 +123,14 @@ CREATE TABLE Customer1 (customer_id INT,cust_name VARCHAR(20),city VARCHAR(20),g
 ```
 ## Inserting Values to the Table
 ```sql
-INSERT INTO Customer1 (customer_id, cust_name, city, grade, salesman_id) VALUES(3002, 'Nick Rimando', 'New York', 100, 5001);
-INSERT INTO Customer1 (customer_id, cust_name, city, grade, salesman_id) VALUES(3007, 'Brad Davis', 'New York', 200, 5001);
-INSERT INTO Customer1 (customer_id, cust_name, city, grade, salesman_id) VALUES(3005, 'Graham Zusi', 'California', 200, 5002);
-INSERT INTO Customer1 (customer_id, cust_name, city, grade, salesman_id) VALUES(3008, 'Julian Green', 'London', 300, 5002);
-INSERT INTO Customer1 (customer_id, cust_name, city, grade, salesman_id) VALUES(3004, 'Fabian Johnson', 'Paris', 300, 5006);
-INSERT INTO Customer1 (customer_id, cust_name, city, grade, salesman_id) VALUES(3009, 'Geoff Cameron', 'Berlin', 100, 5003);
-INSERT INTO Customer1 (customer_id, cust_name, city, grade, salesman_id) VALUES(3003, 'Jozy Altidor', 'Moscow', 200, 5007);
-INSERT INTO Customer1 (customer_id, cust_name, city, grade, salesman_id) VALUES(3001, 'Brad Guzan', 'London', NULL, 5005);
+INSERT INTO Customer1 (customer_id, cust_name, city, grade, salesman_id) VALUES(3002, 'Nick ', 'New York', 100, 5001);
+INSERT INTO Customer1 (customer_id, cust_name, city, grade, salesman_id) VALUES(3007, 'Brad ', 'New York', 200, 5001);
+INSERT INTO Customer1 (customer_id, cust_name, city, grade, salesman_id) VALUES(3005, 'Graham', 'California', 200, 5002);
+INSERT INTO Customer1 (customer_id, cust_name, city, grade, salesman_id) VALUES(3008, 'Julian', 'London', 300, 5002);
+INSERT INTO Customer1 (customer_id, cust_name, city, grade, salesman_id) VALUES(3004, 'Johnson', 'Paris', 300, 5006);
+INSERT INTO Customer1 (customer_id, cust_name, city, grade, salesman_id) VALUES(3009, 'Geameron', 'Berlin', 100, 5003);
+INSERT INTO Customer1 (customer_id, cust_name, city, grade, salesman_id) VALUES(3003, 'Jotidor', 'Moscow', 200, 5007);
+INSERT INTO Customer1 (customer_id, cust_name, city, grade, salesman_id) VALUES(3001, 'Brauzan', 'London', NULL, 5005);
 ```
 ## Create a Salesperson1 table
 ```sql
@@ -145,12 +138,12 @@ CREATE TABLE Salesman1 (salesman_id INT,name VARCHAR(20),city VARCHAR(20),commis
 ```
 ## Inserting Values to the Table
 ```sql
-INSERT INTO Salesman1 (salesman_id, name, city, commission) VALUES(5001, 'James Hoog', 'New York', 0.15);
-INSERT INTO Salesman1 (salesman_id, name, city, commission) VALUES(5002, 'Nail Knite', 'Paris', 0.13);
-INSERT INTO Salesman1 (salesman_id, name, city, commission) VALUES(5005, 'Pit Alex', 'London', 0.11);
-INSERT INTO Salesman1 (salesman_id, name, city, commission) VALUES(5006, 'Mc Lyon', 'Paris', 0.14);
-INSERT INTO Salesman1 (salesman_id, name, city, commission) VALUES(5007, 'Paul Adam', 'Rome', 0.13);
-INSERT INTO Salesman1 (salesman_id, name, city, commission) VALUES(5003, 'Lauson Hen', 'San Jose', 0.12);
+INSERT INTO Salesman1 (salesman_id, name, city, commission) VALUES(5001, 'Jame', 'York', 0.15);
+INSERT INTO Salesman1 (salesman_id, name, city, commission) VALUES(5002, 'Nainite', 'Paris', 0.13);
+INSERT INTO Salesman1 (salesman_id, name, city, commission) VALUES(5005, 'Pilex', 'London', 0.11);
+INSERT INTO Salesman1 (salesman_id, name, city, commission) VALUES(5006, 'Mcyon', 'Paris', 0.14);
+INSERT INTO Salesman1 (salesman_id, name, city, commission) VALUES(5007, 'Paudam', 'Rome', 0.13);
+INSERT INTO Salesman1 (salesman_id, name, city, commission) VALUES(5003, 'Lauen', 'San Jose', 0.12);
 ```
 ### Q7) Write a SQL query to find the salesperson and customer who reside in the same city. Return Salesman, cust_name and city.
 
@@ -161,7 +154,7 @@ SELECT salesman1.name AS "Salesman",customer1.cust_name AS "Customer Name",sales
 
 
 ### OUTPUT:
-![image](https://github.com/rathishc12/EX-3-SubQueries-Views-and-Joins/assets/120539398/f8c633a1-3d6c-4612-902f-84583b6cc16d)
+![Screenshot 2023-10-10 155056](https://github.com/rathishc12/EX-3-SubQueries-Views-and-Joins/assets/120539398/e9aedf5c-8f0c-4c14-adca-5987f7994bce)
 
 ### Q8) Write a SQL query to find salespeople who received commissions of more than 13 percent from the company. Return Customer Name, customer city, Salesman, commission.
 
@@ -173,8 +166,8 @@ SELECT customer1.cust_name AS "Customer Name",customer1.city AS "Customer City",
 
 
 ### OUTPUT:
-![image](https://github.com/rathishc12/EX-3-SubQueries-Views-and-Joins/assets/120539398/cc0a72ef-882f-4e31-bc51-01f819421db6)
 
+![Screenshot 2023-10-10 155133](https://github.com/rathishc12/EX-3-SubQueries-Views-and-Joins/assets/120539398/d91f913b-dcbd-4c83-8c31-86ae3f78fe6e)
 
 ### Q9) Perform Natural join on both tables
 
@@ -185,7 +178,8 @@ SELECT customer1.cust_name AS "Customer Name",customer1.city AS "Customer City",
 
 
 ### OUTPUT:
-![image](https://github.com/rathishc12/EX-3-SubQueries-Views-and-Joins/assets/120539398/3ba622d6-13cd-4b36-9ee7-f995c236b629)
+![Screenshot 2023-10-10 155133](https://github.com/rathishc12/EX-3-SubQueries-Views-and-Joins/assets/120539398/d91f913b-dcbd-4c83-8c31-86ae3f78fe6e)
+![Screenshot 2023-10-10 155505](https://github.com/rathishc12/EX-3-SubQueries-Views-and-Joins/assets/120539398/cb18c14b-05a4-4a4d-b469-e56a875c1780)
 
 ### Q10) Perform Left and right join on both tables
 
@@ -196,14 +190,15 @@ SELECT * FROM salesman1 LEFT JOIN customer1 ON salesman1.salesman_id = customer1
 ```
 
 ### OUTPUT:
-![image](https://github.com/rathishc12/EX-3-SubQueries-Views-and-Joins/assets/120539398/0e558bc4-c3f0-4fec-b4f8-ded3f2980687)
+![Screenshot 2023-10-10 155555](https://github.com/rathishc12/EX-3-SubQueries-Views-and-Joins/assets/120539398/581018d1-bdaa-475b-b732-b67c87b7ea98)
 
 ### RIGHT JOIN
 ```
 SELECT * FROM salesman1 RIGHT JOIN customer1 ON salesman1.salesman_id = customer1.salesman_id;
 ```
 ### OUTPUT
-![image](https://github.com/rathishc12/EX-3-SubQueries-Views-and-Joins/assets/120539398/77cbd66b-1981-4389-9cca-bf4deae9ce7b)
+![Screenshot 2023-10-10 155631](https://github.com/rathishc12/EX-3-SubQueries-Views-and-Joins/assets/120539398/f8b54981-b978-4ba6-8887-881133c092ca)
+
 ### RESULT:
 Hence successfully created SubQueries, Views and Joins.
 
